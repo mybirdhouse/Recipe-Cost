@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    dispay: grid;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image:linear-gradient(to right, rgba(255, 255, 0, .8), rgba(0, 255, 255, .95));
+}
+
+/*header styles*/
+
+h1, h2 {
+  text-align: center;
+}
+
+figure {
+  width: 250px;
+  float:left;
+  border: 5px solid red;
+}
+
+
+figcaption {
+  width: 200px;
+  font-size: 2em;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  display: none;
+}
+
+.productName {
+  background-color: aqua;
+}
+
+caption {
+  width: 80%;
+}
+
+/*Tab styles */
+
+.tablink {
+background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: bisque;
+}
+.tabcontent {
+/*  display: none;*/
+  color: black;
+  padding: 100px 20px;
+  height: 50%;
+}
+
+#Summary {background-color: rgba(255, 255, 0, .8)}
+#Purchased {background-color: beige}
+#Conversion {background-color: chartreuse}
+#About {background-color: cornsilk}
+
+/*table styles*/
+
+#summaryTable, #tablePurchased, #conversionTable {
+  border: 3px solid red;
+  font-size: 1.1em;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.productName {
+  color: blue;
+}
+
+.productImage {
+  
+}
+
+caption {
+  font-size: 2em; 
+}
+
+td {
+  border: 3px solid black;
+  font-size: 2em;
+  padding: 3px; 
+}
+
+#summaryTable.tFRow {
+  border: none;
+  column-span: 5;
+}
+.costTitle, .cost {
+  color: blue;
+  width: 55px;
+  text-align:center;
+}
+tFDetail4 {
+  column-span: 4;
+}
+
+.cost::before {
+  content:"$";
+}
+
+.costTitle::after {
+  content:" ($)";
+}

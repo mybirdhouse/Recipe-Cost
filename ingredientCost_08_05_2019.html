@@ -1,0 +1,79 @@
+<!-- Use this template to create ingredientCost08052019.html-->
+<!DOCTYPE html>
+<html lang=en-us>
+ <head>
+    <meta charset="utf-8">
+
+    <title>Cost of Ingredients -- version 08-05-2019</title>
+    <link rel="stylesheet" href="ingredientCost_08_05_2019.css">
+  <script src="ingredientCost_08_05_2019.js"></script>
+  <script src="accounting.js"></script>      
+ </head>
+ <body>
+   <button class="tablink" onclick="openPage('summary', this, 'red')" id="defaultOpen">Summary</button>
+   
+   <button class="tablink" onclick="openPage('purchased', this, 'blue')">Purchased</button>
+   
+   <button class="tablink" onclick="openPage('conversion', this, 'green')">Conversion</button>
+   
+   <button class="tablink" onclick="openPage('About', this, 'yellow')">About</button> 
+  
+   <!--   ****** Begin Summary Page ******-->
+       
+   <div id="summary" class="tabcontent">
+     <h1>This is the Summary Page</h1> 
+   
+    <header id="summaryHeader"></header>
+ 
+     <table id="summaryTable"></table>
+   </div>
+    
+   <!--   ****** end Summary Page ******-->
+    
+   <!--   ****** Begin Purchased Page ******-->
+   <div id="purchased" class="tabcontent">
+     
+   <header id = "purchasedHeader"></header>
+ 
+   <table id="purchasedTable"></table>
+   
+   </div>
+   
+   <!--   ****** end Purchased Page ******--> 
+   
+   <!--   ****** Begin Conversion Page ******-->
+   
+   <div id="conversion" class="tabcontent">
+   
+   <header id="conversionHeader"> 
+   <button id="formula">Click to see the formula</button></header>
+ 
+   <table id="conversionTable"></table>
+   
+   </div>
+  
+   <!--   ****** End Conversion Page ******-->
+   
+   <!--   ****** Begin About Page ******-->
+      
+   <div id="About" class="tabcontent">
+     <h1>Purpose</h1>
+     <h2 id="about">The purpose of this project is to estimate the cost of the ingredients of a selected baked/cooked food based on the most recent local ingredient prices</h2>  
+   </div>
+ 
+   <!--   ****** End About Page ******-->            
+  
+  <script>
+     // ****** get id="defaultOpen" - click on it ******
+//    getElementById() MUST be in the document in which the id is located.
+ document.getElementById("defaultOpen").click();
+
+    //  ******  end tablink pages  ******  //
+ var purchasedTable = document.getElementById("purchasedTable");
+    
+ </script>
+
+                                               
+                                                                                                                                       
+ </body>
+</html>
