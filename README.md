@@ -1,2 +1,3 @@
 # Recipe-Cost
-The cost of a recipe.
+This project intends to calculate the estimated cost of the ingredients of a recipe.
+
